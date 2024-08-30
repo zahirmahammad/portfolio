@@ -147,7 +147,8 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
+  /* background-color: var(--space-cadet); */
+  background-color: var(--white);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
@@ -206,7 +207,8 @@ body {
 
 .h2,
 .h3 {
-  color: var(--white);
+  /* color: var(--white); */
+  color: var(--space-cadet);
   font-family: var(--ff-barlow);
   font-weight: var(--fw-600);
   line-height: 1.3;
@@ -306,7 +308,8 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  /* background-image: url("../images/hero-bg.jpg"); */
+  background-color: var(--space-cadet);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -462,14 +465,16 @@ body {
 
 .skills-title,
 .skills-data {
-  color: var(--white);
+  /* color: var(--white); */
+  color: var(--space-cadet);
   font-size: var(--fs-5);
   font-family: var(--ff-barlow);
   font-weight: var(--fw-600);
 }
 
 .skills-progress-box {
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-color: var(--space-cadet);
   height: 8px;
   border-radius: var(--radius-10);
 }
