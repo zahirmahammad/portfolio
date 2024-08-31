@@ -374,7 +374,7 @@ body {
 
 .about-banner {
   background-color: var(--independence);
-  border-radius: var(--radius-10);
+  border-radius: var(--radius-5);
   margin-block-end: 30px;
 }
 
