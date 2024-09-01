@@ -398,9 +398,11 @@ body {
   #PORTFOLIO
 \*-----------------------------------*/
 
-.portfolio .section-title { margin-block-end: 18px; }
+/* .portfolio .section-title { margin-block-end: 18px; } */
+.portfolio .section-title { margin-block-end: 0px; }
 
-.portfolio .section-text { margin-block-end: 80px; }
+/* .portfolio .section-text { margin-block-end: 80px; } */
+.portfolio .section-text { margin-block-end: 0px; }
 
 .portfolio-list {
   display: grid;
@@ -412,12 +414,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 120px 20px;
+  padding: 140px 20px;
+  /* height: 440px; */
   border-radius: var(--radius-20);
   font-family: var(--ff-barlow);
   color: var(--white);
   font-weight: var(--fw-600);
   transition: var(--transition-2);
+
+  aspect-ratio: 2.3 / 1; 
+  /* width: 100%;   */
 }
 
 .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
