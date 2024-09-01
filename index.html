@@ -1,673 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dopefolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zahir Md - Aspiring Roboticist</title>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
-</head>
-
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#">
-        <h1 class="logo">Zahir Mahammad</h1>
-      </a>
-
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" class="close-icon"></ion-icon>
-      </button>
-
-      <nav class="navbar container">
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-
-          <!-- <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-          </li> -->
-
-          <li>
-            <a href="#" class="btn btn-primary">Download CV</a>
-          </li>
-
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <div class="hero-banner">
-
-            <img src="./assets/images/LinkedIN_picture.png" width="800" height="864" loading="lazy" alt="Ethan's Photo"
-              class="img-cover">
-
-            <!-- <div class="elem elem-1">
-              <p class="elem-title">CS</p>
-
-              <p class="elem-text">Years of Success</p>
-            </div>
-
-            <div class="elem elem-2">
-              <p class="elem-title">800+</p>
-
-              <p class="elem-text">Projects Completed</p>
-            </div>
-
-            <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div>
-
-            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from New York"
-              class="rotate-img"> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
           </div>
+          <span class="header__logo-sub">Zahir Mahammad</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
 
-          <div class="hero-content">
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
 
-            <h2 class="hero-title">
-              <span>Hello I'm</span>
-              <strong>Zahir Mahammad</strong> Robotics Student at UMD
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <!-- <h1 class="heading-primary">Hey, I am Zahir Mahammad</h1> -->
+        <h1 class="heading-primary">Zahir Mahammad</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente solutions for
+            complex problems
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>John Doe</strong>
+                and I'm a <strong> Frontend Web Developer </strong> located in
+                Los Angeles. I've done
+                <strong> remote </strong>
+                projects for agencies, consulted for startups, and collaborated
+                with talented people to create
+                <strong>digital products </strong>
+                for both business and consumer use.
+              </p>
+              <p class="about__content-details-para">
+                I'm a bit of a digital product junky. Over the years, I've used
+                hundreds of web and mobile apps in different industries and
+                verticals. Feel free to
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Shopify</div>
+              <div class="skills__skill">Wordpress</div>
+              <div class="skills__skill">Google ADS</div>
+              <div class="skills__skill">Facebook Ads</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">IOS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 1</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 2</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 3</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
             </h2>
-
-            <p class="hero-text">
-              Aspiring Roboticist | Robo-Nerd | Interdisciplinary Engineer
-            </p>
-
-            <div class="btn-group">
-              <a href="#about" class="btn btn-primary blue">About</a>
-
-              <!-- <a href="#about" class="btn">Scroll Down</a> -->
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
             </div>
-
           </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about">
-        <div class="container">
-
-          <figure class="about-banner">
-
-            <img src="./assets/images/umd_image.jpg" width="800" height="652" loading="lazy" alt="umd's Photo"
-              class="img-cover">
-
-            <img src="./assets/images/myrobot_image.jpg" width="800" height="717" loading="lazy" alt="zahir's Photo"
-              class="abs-img">
-
-              
-            <!-- <div class="abs-icon abs-icon-1">
-              <ion-icon name="logo-css3"></ion-icon>
-            </div> -->
-
-            <!-- <div class="abs-icon abs-icon-2">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </div> -->
-
-            <!-- <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-angular"></ion-icon>
-            </div> -->
-
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">Education</p>
-
-            <!-- <h2 class="h2 section-title">University of Maryland, College Park</h2> -->
-            <h2 style="color: black; margin-bottom: 5px;"> University of Maryland, College Park</h2>
-
-            <p class="section-text">
-              <!-- Masters of Engineering in Robotics <br> May 2023  - May 2025 </br>  -->
-              Masters of Engineering in Robotics | May 2023  - May 2025 </br> 
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
             </p>
-
-            <p class="section-text">
-              Control of Robotic Systems | Perception & Planning for Autonomous Robots | Imitation Learning | Reinforcement Learning | Multi-Modal Foundation Models
-            </p>
-
-            <!-- <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a> -->
-
-            <h2 style="color: black; margin-bottom: 5px;"> IIITDM Kacheepuram, Chennai</h2>
-
-            <p class="section-text">
-              <!-- B.Tech Mechanical Engineering (Smart Manufacturing) <br> June 2018  - May 2022 </pbr>  -->
-              B.Tech Mechanical Engineering | June 2018  - May 2022 </pbr> 
-            </p>
-
           </div>
-
         </div>
-      </section>
 
-
-
-
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="section portfolio" id="portfolio">
-        <div class="container">
-
-          <p class="section-subtitle">Portfolio</p>
-
-          <h2 class="h2 section-title">Projects</h2>
-
-          <!-- <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p> -->
-
-          <ul class="portfolio-list">
-
-            <li>
-              <a href="autonomy.html" class="portfolio-card" style="background-image: url('./assets/images/NAVINACT.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Youtube</p>
-
-                  <h3 class="h3 card-title">NAVINACT</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="autonomy.html" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Vimeo</p>
-
-                  <h3 class="h3 card-title">Mujoco Environment Based on Robosuite and GELLO</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="autonomy.html" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Soundcloud</p>
-
-                  <h3 class="h3 card-title">Humanoid Robot Gait</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="autonomy.html" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Perception and Navigation</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="autonomy.html" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Multi-Modal Mobility Robot</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-
-            <li>
-              <a href="autonomy.html" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Drone Technology Enabled Leaf Disease Detection</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-
-
-          </ul>
-
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="section skills" id="skills">
-        <div class="container">
-
-          <p class="section-subtitle">My Skills</p>
-
-          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
-
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
-
-          <ul class="skills-list">
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">CSS</h3>
-
-                <data class="skills-data" value="95">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">React</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">MongoDB</h3>
-
-                <data class="skills-data" value="90">90%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 90%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">Python</h3>
-
-                <data class="skills-data" value="70">70%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">PHP</h3>
-
-                <data class="skills-data" value="80">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">JavaScript</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" id="contact">
-        <div class="container">
-
-          <div class="contact-card">
-
-            <p class="card-subtitle">Don't be shy</p>
-
-            <h2 class="h3 section-title">Drop Me a Line</h2>
-
-            <div class="wrapper">
-
-              <form action="" class="contact-form">
-
-                <input type="text" name="name" placeholder="Name" required class="contact-input">
-
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
-
-                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
-
-                <button type="submit" class="btn-submit">Submit Message</button>
-
-              </form>
-
-              <ul class="contact-list">
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      48th Avenue, College Park, MD
-                    </address>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:zahirmd@umd.edu" class="contact-item-link">zahirmd@umd.edu</a>
-                  </div>
-
-                </li>
-
-                <!-- <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Phone</h3>
-
-                    <a href="tel:+1234567890" class="contact-item-link">+123 456 7890</a>
-                  </div>
-
-                </li> -->
-
-              </ul>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-<!-- 
-      <section class="section blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Latest News</p>
-
-          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
-
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
-                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
-                  </a>
-                </figure>
-
-                <a href="#" class="card-tag">Web Development</a>
-
-                <h3 class="card-title">
-                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section> -->
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <!-- <p class="copyright">
-        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reseverd
-      </p> -->
-
-      <!-- <ul class="footer-list">
-        <li>
-          <a href="#" class="footer-link">Terms & Condition</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul> -->
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
