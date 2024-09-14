@@ -48,6 +48,8 @@
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
+  --beige-1: hsl(40, 30%, 90%);
+  --beige-2: hsl(40, 30%, 98%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -136,6 +138,7 @@ input, textarea {
 ::selection {
   background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
+  /* color: var(--vegas-gold); */
 }
 
 :focus { outline-color: var(--orange-yellow-crayola); }
@@ -143,6 +146,7 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
+/* body { background: var(--beige-1); } */
 
 
 
@@ -189,6 +193,7 @@ article {
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
+  /* background: var(--beige-1); */
   border-radius: inherit;
   z-index: -1;
 }
@@ -1765,9 +1770,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   body::-webkit-scrollbar { width: 20px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
+  /* body::-webkit-scrollbar-track { background: var(--beige-2); } */
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
+    /* border: 5px solid var(--beige-2); */
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
