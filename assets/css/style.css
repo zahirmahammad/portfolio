@@ -775,6 +775,7 @@ main {
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
+  /* margin-bottom: 5px; */
 }
 
 .timeline-list {
@@ -825,6 +826,25 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+
+
+.timeline-dates {
+  display: flex;
+  /* font-size: 1.0vw; */
+  /* justify-content: space-between;  */
+  /* align-items: center; */
+}
+
+.left {
+  text-align: left;
+  /* width: 50%; */
+}
+
+.right {
+  text-align: left;
+  /* width: 50%; */
+}
+
 
 
 /**
