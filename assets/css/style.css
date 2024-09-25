@@ -853,7 +853,23 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+/* .skills-list { padding: 20px; } */
+
+.skills-list { 
+  padding: 10px; 
+  display: flex; /* Enable flexbox for the list */
+  flex-wrap: wrap; /* Allow wrapping to create two columns */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Extra stuff */
+.skills-item { 
+  width: 25%; /* Each item takes half the width for two columns */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0px; /* Add padding for spacing */
+}
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
