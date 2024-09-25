@@ -866,6 +866,7 @@ main {
 
 /* Extra stuff */
 .skills-item { 
+  flex: 1 1 calc(25% - 20px); /* Each item takes 25% of the width minus spacing */
   width: 25%; /* Each item takes half the width for two columns */
   box-sizing: border-box; /* Include padding and border in width */
   padding: 0px; /* Add padding for spacing */
