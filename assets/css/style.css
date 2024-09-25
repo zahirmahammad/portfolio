@@ -867,11 +867,25 @@ main {
 /* Extra stuff */
 .skills-item { 
   flex: 1 1 calc(25% - 20px); /* Each item takes 25% of the width minus spacing */
-  width: 25%; /* Each item takes half the width for two columns */
+  margin: 6px; /* Margin for spacing between items */
+  /* width: 25%; Each item takes half the width for two columns */
   box-sizing: border-box; /* Include padding and border in width */
-  padding: 0px; /* Add padding for spacing */
+  text-align: center; /* Center text */
+  /* padding: 0px; Add padding for spacing */
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills-item {
+      flex: 1 1 calc(33.33% - 20px); /* Three columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-item {
+      flex: 1 1 100%; /* Stacks items for small screens */
+  }
+}
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
